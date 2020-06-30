@@ -23,3 +23,7 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
                       \              /
                       
                              BGP
+
+# BGP 
+
+  在 ASs 間，運用 Routing Policy 路由政策決定封包的路徑。
