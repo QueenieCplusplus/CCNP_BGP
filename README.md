@@ -29,6 +29,7 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
 
 自治系統號碼是由 IANA 組織所管理的。
 亞洲區各國 ASN 申請單位是 Asia Pacific - NIC 組織。
+號碼共有 2 ^ 16 = 65535 個，其中私有網路使用的 ASN 為 64512 ~ 65535 區間。 
 
 
 # BGP 
