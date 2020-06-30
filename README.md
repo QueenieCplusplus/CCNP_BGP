@@ -10,3 +10,16 @@ BGP 是 EGP 的改良。
 https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
 
 然而透過 BGP，仍然可以得到單一路由協定的路由資訊。
+
+          AS 100                           AS 200
+
+
+            R 群- R-gw-----------------gw-R -R群
+                   |                    |
+                  BGP                  BGP
+                  
+                    \                  /
+                     \                /
+                      \              /
+                      
+                             BGP
