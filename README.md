@@ -37,4 +37,4 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
 
 # BGP 
 
-  在 ASs 間，運用 Routing Policy 路由政策決定封包的路徑。
+  在 ASs 間，運用 Routing Policy 路由政策決定封包的路徑。另外，BGP 屬於 Distance Vector 距離向量的路由協定。
