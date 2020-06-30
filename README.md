@@ -33,7 +33,7 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
 
 * BGP Requirements
 
-不同 AS 間的頻寬要大，不然 BGP 無法運作，另外 BGP 的路由器的能力也要能勝任任務。
+不同 AS 間的頻寬要大，不然 BGP 無法運作，另外 BGP 的路由器的能力（需要較高的處理器和較多的記憶體，最好是 128 MB RAM）也要能勝任任務。
 
 # BGP 
 
