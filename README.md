@@ -31,6 +31,9 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
 亞洲區各國 ASN 申請單位是 Asia Pacific - NIC 組織。
 號碼共有 2 ^ 16 = 65535 個，其中私有網路使用的 ASN 為 64512 ~ 65535 區間。 
 
+* BGP Requirements
+
+不同 AS 間的頻寬要大，不然 BGP 無法運作，另外 BGP 的路由器的能力也要能勝任任務。
 
 # BGP 
 
