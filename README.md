@@ -47,11 +47,13 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
   BGP 是 ASs 間，用來接收和更新路徑的主要協定，由於互聯網路是由多的 ASs 所組成，常會有許多路徑可達到同一網段的情形，
   因此 BGP 需要一定程序來選擇最佳路徑。
   
+  因為 BGP 能區分出不同 AS 路徑和 同一 AS 路徑（分別採用 EBGP 和 IBGP ），細節詳見 Next-Hops 屬性。
+  
   依據的屬性，請詳封包標頭（路徑屬性）的解析。
   
   (1) 同一 As 內，『同步化』開啟情況下，方才會送出路徑資訊。否則詳見 10。
   
-  (2) Next Hops 需要 reachable 方才會使用這條路徑，故需要使用 IGP 協定。
+  (2) Next-Hop 需要 reachable 方才會使用這條路徑，故需要使用 IGP 協定。
   
   (3) 選擇高權值 Weight 的路徑。
   
@@ -65,7 +67,7 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
 
   (8) 若有相同 Origin Code，則選擇最小 MED 值。
   
-  (9)
+  (9) 
   
   (10) 倘若 Async 關閉，則只有 IGP 協定可使用，則會選擇最短 BGP Next-Hop 路徑。
   
@@ -79,6 +81,9 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
 * Synch 同步化
 
 * Next-Hops 下一跳
+
+             因為 BGP 能區分出不同 AS 路徑和 同一 AS 路徑（分別採用 EBGP 和 IBGP ），
+             故此屬性的使用上也有所不同。
 
 * Weight 權值
 
