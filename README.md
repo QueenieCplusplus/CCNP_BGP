@@ -49,7 +49,7 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
   
   依據的屬性，請詳封包標頭（路徑屬性）的解析。
   
-  (1) 同一 As 內，『同步化』開啟情況下，方才會送出路徑資訊。
+  (1) 同一 As 內，『同步化』開啟情況下，方才會送出路徑資訊。否則詳見 10。
   
   (2) Next Hops 需要 reachable 方才會使用這條路徑，故需要使用 IGP 協定。
   
@@ -63,13 +63,13 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
   
   (7) 若有相同 AS-Path，則選擇最小 Origin Code，基本上 IGP < EGP < Incomplete。
 
-  (8)
+  (8) 若有相同 Origin Code，則選擇最小 MED 值。
   
   (9)
   
-  (10)
+  (10) 倘若 Async 關閉，則只有 IGP 協定可使用，則會選擇最短 BGP Next-Hop 路徑。
   
-  (11)
+  (11) 最後是最久路徑，在選擇最小的鄰接 BGP Router ID, 通常是最高的 IP 位址代表。
   
   
 # BPG Packet Header 
