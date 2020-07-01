@@ -76,7 +76,20 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
   
 # BPG Packet Header 
 
-解讀 BGP 封包標頭 (路徑屬性)
+解讀 BGP 封包標頭主要欄位
+
+* Open 是否打開
+
+* Update 路由更新訊息
+
+* Notification （錯誤）通知
+ 
+* Keepalive 存活時間
+
+
+# Path Attributes 
+
+解讀 BGP 封包標頭欄位 Update 內的路徑屬性。
 
 * Synch 同步化
 
