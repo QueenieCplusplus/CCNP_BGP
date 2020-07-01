@@ -42,9 +42,46 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
   在 ASs 間，運用 Routing Policy 路由政策決定封包的路徑。另外，BGP 屬於 Distance Vector 距離向量的路由協定。
   仰賴 TCP port 179 (預設) 傳送訊息。
   
+  * BGP 的路徑選擇
+  
+  BGP 是 ASs 間，用來接收和更新路徑的主要協定，由於互聯網路是由多的 ASs 所組成，常會有許多路徑可達到同一網段的情形，
+  因此 BGP 需要一定程序來選擇最佳路徑。
+  
+  依據的屬性，請詳封包標頭（路徑屬性）的解析。
+  
+  (1) 同一 As 內，『同步化』開啟情況下，方才會送出路徑資訊。
+  
+  (2) Next Hops 需要 reachable 方才會使用這條路徑，故需要使用 IGP 協定。
+  
+  (3) 選擇高權值 Weight 的路徑。
+  
+  (4)
+  
+  (5)
+  
+  (6)
+  
+  (7)
+  
+  (8)
+  
+  (9)
+  
+  (10)
+  
+  (11)
+  
+  
 # BPG Packet Header 
 
-解讀 BGP 封包標頭
+解讀 BGP 封包標頭 (路徑屬性)
+
+* Synch 同步化
+
+* Weight 權值
+
+  權值區間為 0 ~ 65535，設定路由的預設權值為 32768，未設定則預設為 0。
+  倘若有多條路徑可達到相同目的地時，可採用 Wight 屬性。
 
 (to be continued...)
 
