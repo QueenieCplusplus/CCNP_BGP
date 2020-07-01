@@ -138,7 +138,8 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
 
 * Community (非強制性，選項轉移類)
 
-          (to be continued...)
+           此屬性可過濾路徑，作用如同 Prefix，但不限制於影體界線，如自治系統或是網段，
+           社群屬性用在一群路徑中，讓他們擁有相同路徑選擇政策。
 
 # BPG CLI setup
 
