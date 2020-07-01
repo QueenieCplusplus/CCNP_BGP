@@ -67,7 +67,7 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
 
   (8) 若有相同 Origin Code，則選擇最小 MED 值。
   
-  (9) 
+  (9) 若 MED 相同，則選則 EBGP，才選擇 IBGP。
   
   (10) 倘若 Async 關閉，則只有 IGP 協定可使用，則會選擇最短 BGP Next-Hop 路徑。
   
