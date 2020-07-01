@@ -86,6 +86,9 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
  
 * Keepalive 存活時間
 
+            可供判定鄰近路由器是否存活即其網段是否可達到。
+            Hold Time 最好是 Keep Alive 的三倍時間。
+            不用太頻繁，避免耗損 CPU。
 
 # Path Attributes 
 
