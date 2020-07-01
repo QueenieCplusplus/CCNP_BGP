@@ -131,7 +131,10 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
           
           Incomplete
           
-* MED ((非強制性，選項轉移類))
+* MED (非強制性，選項轉移類)
+
+           Multi-exit-discriminator 代表外部臨接路徑的喜好程度
+
           
 * Auto Aggregate  (非強制性，選項轉移類)
 
