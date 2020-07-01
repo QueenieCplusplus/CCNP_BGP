@@ -107,6 +107,10 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
           EGP
           
           Incomplete
+          
+* Auto Aggregate  (非強制性)
+
+* Community (非強制性)
 
 (to be continued...)
 
