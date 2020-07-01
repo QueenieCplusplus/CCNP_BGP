@@ -82,6 +82,8 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
 
 * Update 路由更新訊息
 
+           （重要訊息請詳 Path Attribute。）
+
 * Notification （錯誤）通知
  
 * Keepalive 存活時間
