@@ -47,3 +47,10 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
 解讀 BGP 封包標頭
 
 (to be continued...)
+
+# BPG CLI setup
+
+解析 BGP 設定指令
+
+(to be continued...)
+
