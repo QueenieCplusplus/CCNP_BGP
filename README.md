@@ -51,27 +51,27 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
   
   依據的屬性，請詳封包標頭（路徑屬性）的解析。
   
-  (1) 同一 As 內，『同步化』開啟情況下，方才會送出路徑資訊。否則詳見 10。
-  
-  (2) Next-Hop 需要 reachable 方才會使用這條路徑，故需要使用 IGP 協定。
-  
-  (3) 選擇高權值 Weight 的路徑。
-  
-  (4) 若權值相等，則採用較高的 Local Preference。
-  
-  (5) 若有相同 Local Prefreance，則採用本身產生的路徑的 Router。
-  
-  (6) 若有相同 Local Prefreance，且都非本身產生的路徑的 Router，則選擇最短的 AS-Path。
-  
-  (7) 若有相同 AS-Path，則選擇最小 Origin Code，基本上 IGP < EGP < Incomplete。
+            (1) 同一 As 內，『同步化』開啟情況下，方才會送出路徑資訊。否則詳見 10。
 
-  (8) 若有相同 Origin Code，則選擇最小 MED 值。
-  
-  (9) 若 MED 相同，則選則 EBGP，才選擇 IBGP。
-  
-  (10) 倘若 Async 關閉，則只有 IGP 協定可使用，則會選擇最短 BGP Next-Hop 路徑。
-  
-  (11) 最後是最久路徑，在選擇最小的鄰接 BGP Router ID, 通常是最高的 IP 位址代表。
+            (2) Next-Hop 需要 reachable 方才會使用這條路徑，故需要使用 IGP 協定。
+
+            (3) 選擇高權值 Weight 的路徑。
+
+            (4) 若權值相等，則採用較高的 Local Preference。
+
+            (5) 若有相同 Local Prefreance，則採用本身產生的路徑的 Router。
+
+            (6) 若有相同 Local Prefreance，且都非本身產生的路徑的 Router，則選擇最短的 AS-Path。
+
+            (7) 若有相同 AS-Path，則選擇最小 Origin Code，基本上 IGP < EGP < Incomplete。
+
+            (8) 若有相同 Origin Code，則選擇最小 MED 值。
+
+            (9) 若 MED 相同，則選則 EBGP，才選擇 IBGP。
+
+            (10) 倘若 Async 關閉，則只有 IGP 協定可使用，則會選擇最短 BGP Next-Hop 路徑。
+
+            (11) 最後是最久路徑，在選擇最小的鄰接 BGP Router ID, 通常是最高的 IP 位址代表。
   
   
 # BPG Packet Header 
