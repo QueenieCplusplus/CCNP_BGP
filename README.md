@@ -133,7 +133,8 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
           
 * Auto Aggregate  (非強制性)
 
-           (to be continued...)
+           倘若 Update 資訊中，集合起來的路徑無法辨識路徑來源，就不會加入此屬性。
+           倘若真的無法辨識路徑來源，等同資料的遺失，此時會選擇較少指定的路徑，加上此屬性，方才送出訊息。
 
 * Community (非強制性)
 
