@@ -55,11 +55,11 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
   
   (3) 選擇高權值 Weight 的路徑。
   
-  (4)
+  (4) 若權值相等，則採用較高的 Local Preference。
   
-  (5)
+  (5) 若有相同 Local Prefreance，則採用本身產生的路徑的 Router。
   
-  (6)
+  (6) 若有相同 Local Prefreance，且都非本身產生的路徑的 Router，則選擇最短的 AS-Path。
   
   (7)
   
@@ -78,10 +78,26 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
 
 * Synch 同步化
 
+* Next-Hops 下一跳
+
 * Weight 權值
 
   權值區間為 0 ~ 65535，設定路由的預設權值為 32768，未設定則預設為 0。
   倘若有多條路徑可達到相同目的地時，可採用 Wight 屬性。
+  
+* Local Preference 在地化偏好
+
+  此屬性是在同一 AS 內才會被傳送，使用的是 IBGP 協定，目的是通往相同目的網段的路徑們，從中選擇一個喜好的程度。
+  數值越高，受喜愛程度越大。
+  
+* AS Path 自治區路徑
+
+  此屬性由一連串 ASN 所組成，用來提供到達目的地網路的路徑，此路徑的行程是由最早產生這路徑的 AS，
+  會將 ASN 加入到 AS-Path 屬性中，收到路徑的 AS 在送出路徑時，都會將自己的 ASN 號碼加入到此清單中。
+  
+  為了避免迴路 Loop，清單中若有自己的 ASN，就不會繼續更新路徑了！（不會重複放自己的 ASN 至清單中）
+  
+* Origin 路徑起源
 
 (to be continued...)
 
