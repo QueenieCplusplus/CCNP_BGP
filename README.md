@@ -88,11 +88,16 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
                               +------------+-------------------------------------+
                               | TCP Header |                Data                 |
                               +------------+-------------------------------------+
-                                        |                    
-                                        V
-                                      179 (BGP port number)
-                                                                 
-                  
+                                        |                      |
+                                        V                      |
+                                      179 (BGP port number)    |
+                                                               |
+                                                               |
+                                                               V
+                                                               
+                                                  +------------+-----------------+
+                                                  | BGP Header |      Data       |
+                                                  +------------+-----------------+   
                                   
 
 解讀 BGP 封包標頭主要欄位
