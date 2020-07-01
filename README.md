@@ -131,6 +131,8 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
           
           Incomplete
           
+* MED ((非強制性，選項轉移類))
+          
 * Auto Aggregate  (非強制性，選項轉移類)
 
            倘若 Update 資訊中，集合起來的路徑無法辨識路徑來源，就不會加入此屬性。
