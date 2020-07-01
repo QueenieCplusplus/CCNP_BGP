@@ -61,8 +61,8 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
   
   (6) 若有相同 Local Prefreance，且都非本身產生的路徑的 Router，則選擇最短的 AS-Path。
   
-  (7)
-  
+  (7) 若有相同 AS-Path，則選擇最小 Origin Code，基本上 IGP < EGP < Incomplete。
+
   (8)
   
   (9)
