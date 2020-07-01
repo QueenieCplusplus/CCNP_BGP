@@ -128,13 +128,15 @@ https://github.com/QueenieCplusplus/CCNP_IP#cidr--supernet
           
 * Auto Aggregate  (非強制性)
 
+           (to be continued...)
+
 * Community (非強制性)
 
-(to be continued...)
+          (to be continued...)
 
 # BPG CLI setup
 
 解析 BGP 設定指令
 
-(to be continued...)
+         (to be continued...)
 
